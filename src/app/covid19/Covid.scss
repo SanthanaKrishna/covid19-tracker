@@ -1,0 +1,30 @@
+.covid {
+    background-color: #f5f6fa;
+    height: 100vh;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: 990px) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        flex: 0.9;
+    }
+
+    &__header {
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__stats {
+        display: flex;
+        justify-content: space-between;
+    }
+}
